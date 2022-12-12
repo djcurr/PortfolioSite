@@ -22,4 +22,18 @@ h3, h5 {
 
 ul {
     list-style-type: square;
+    color: $cg-blue;
+}
+
+.jasmine-color {
+    color: $jasmine;
+}
+
+.shiny-shamrock-color {
+    color: $shiny-shamrock;
+}
+
+mat-tab-group {
+    color: $shiny-shamrock;
+    font-family: $ibm-plex-mono;
 }

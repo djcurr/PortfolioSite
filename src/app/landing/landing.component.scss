@@ -37,10 +37,17 @@
 .intro {
     font-size: 22px;
     font-weight: 100;
-    color: $jasmine;
 }
 
 hr.rounded {
     margin-left: 20rem;
-    border-top: 8px solid $cg-blue;
+    border-top: 8px solid $shiny-shamrock;
+}
+
+.jasmine-color {
+    color: $jasmine;
+}
+
+.shiny-shamrock-color {
+    color: $shiny-shamrock;
 }

@@ -1,0 +1,32 @@
+@import "/src/styles.scss";
+
+.container-fluid {
+    font-family: $ibm-plex-sans;
+    background-color: $oxford-blue;
+    color: $cg-blue;
+}
+
+.block-width {
+    display: block;
+    width: 30vw;
+}
+
+h1, h2 {
+    font-family: $ibm-plex-mono;
+}
+
+.shiny-shamrock-color {
+    color: $shiny-shamrock;
+}
+
+.bottom-buffer {
+    padding-bottom: 5rem;
+}
+
+fa-icon {
+    color: $shiny-shamrock;
+}
+
+.jasmine-color {
+    color: $jasmine;
+}

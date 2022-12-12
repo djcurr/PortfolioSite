@@ -1,39 +1,41 @@
 <div class="container-fluid">
     <div class="row align-items-center h-60">
-        <div class="col-sm text-center px-0">
-            <p class="about mx-auto" style="font-size: 24px;">About me</p>
-            <p class="about mx-auto" style="font-size: 22px;">{{about}}</p>
-        </div>
-        <div class="col-sm text-left">
-            <div class="row">
-                <div class="col-sm">
-                    
-                    <ul>
-                        <h3>Education</h3>
+        <div class="col-sm px-0">
+            <div class="about mx-auto mb-3 text-center jasmine-color" style="font-size: 45px; font-weight: 700;">About me</div>
+            <p class="about mx-auto text-center" style="font-size: 22px;">{{about}}</p>
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" animationDuration="300ms" class="about mx-auto" style="width: 42rem;">
+                <mat-tab label="Education">
+                    <ul class="mt-3">
                         <li>North Carolina State University - May 2025 - 3.93</li>
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <ul>
-                        <h3>Languages</h3>
+                </mat-tab>
+                <mat-tab label="Languages">
+                    <ul class="mt-3">
                         <li>JavaScript</li>
                         <li>Java</li>
                         <li>Go</li>
-                        <h3>Databases</h3>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Databases">
+                    <ul class="mt-3">
                         <li>MongoDB</li>
-                        <h3>Frameworks</h3>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Frameworks">
+                    <ul class="mt-3">
                         <li>Bootstrap</li>
                         <li>REST</li>
                         <li>JUnit</li>
-                        <h3>Tools</h3>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Tools">
+                    <ul class="mt-3">
                         <li>Visual Studio</li>
                         <li>Visual Studio Code</li>
                         <li>Eclipse</li>
                     </ul>
-                </div>
-            </div>
+                </mat-tab>
+            </mat-tab-group>
         </div>
     </div>
 </div>
