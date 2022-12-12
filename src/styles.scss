@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/colors";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+html { -ms-overflow-style: none; scrollbar-width: none; }
+html::-webkit-scrollbar { display: none; }
+
+$ibm-plex-sans: "IBM Plex Sans", sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 400;
