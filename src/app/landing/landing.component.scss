@@ -41,7 +41,7 @@
 
 hr.rounded {
     margin-left: 20rem;
-    border-top: 8px solid $shiny-shamrock;
+    border-top: 8px solid $burnt-umber
 }
 
 .jasmine-color {
@@ -50,4 +50,9 @@ hr.rounded {
 
 .shiny-shamrock-color {
     color: $shiny-shamrock;
+}
+
+img {
+    border: solid $burnt-umber 2px;
+    border-radius: 2px;
 }

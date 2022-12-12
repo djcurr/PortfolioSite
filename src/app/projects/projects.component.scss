@@ -1,0 +1,25 @@
+@import "/src/styles.scss";
+
+.container {
+    font-family: $ibm-plex-sans;
+    background-color: $oxford-blue;
+    color: $cg-blue;
+}
+
+h1 {
+    color: $jasmine;
+}
+
+.block-width {
+    display: block;
+    width: 30vw;
+}
+
+hr.rounded {
+    border-top: 8px solid $burnt-umber
+}
+
+div.row {
+    border: solid $burnt-umber 2px;
+    border-radius: 8px;
+}
