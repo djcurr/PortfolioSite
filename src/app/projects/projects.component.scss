@@ -10,16 +10,30 @@ h1 {
     color: $jasmine;
 }
 
-.block-width {
-    display: block;
-    width: 30vw;
+div.row {
+    border: solid $cg-blue 2px;
+    border-radius: 8px;
 }
 
 hr.rounded {
-    border-top: 8px solid $burnt-umber
+  border-top: 8px solid $burnt-umber
 }
 
-div.row {
-    border: solid $burnt-umber 2px;
-    border-radius: 8px;
+img {
+  max-height: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
+/* For screens smaller than 576px (extra small devices) */
+@media (max-width: 575.98px) {
+  div.row {
+    margin: 1rem;
+  }
+
+  h3, h5 {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+

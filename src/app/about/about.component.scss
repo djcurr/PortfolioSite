@@ -6,16 +6,6 @@
     color: $cg-blue;
 }
 
-
-.h-60 {
-    height: 60vh;
-}
-
-.about {
-    display: block;
-    width: 30rem;
-}
-
 h3, h5 {
     color: $jasmine;
 }
@@ -23,6 +13,11 @@ h3, h5 {
 ul {
     list-style-type: square;
     color: $cg-blue;
+    font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .jasmine-color {
@@ -47,5 +42,6 @@ hr.rounded {
 }
 
 li {
-    color: $burnt-umber;
+    text-align: left;
+    color: $cg-blue;
 }

@@ -26,12 +26,9 @@
 }
 
 .picture {
-    max-height: 70vh;
+    max-height: 50vh;
     border-radius: 10%;
-}
-
-.landing {
-    margin-left: 20rem;
+  max-width: 100%;
 }
 
 .intro {
@@ -40,7 +37,6 @@
 }
 
 hr.rounded {
-    margin-left: 20rem;
     border-top: 8px solid $burnt-umber
 }
 
@@ -53,6 +49,48 @@ hr.rounded {
 }
 
 img {
-    border: solid $burnt-umber 2px;
+    border: solid $cg-blue 2px;
     border-radius: 2px;
+}
+
+/* For screens smaller than 576px (extra small devices) */
+@media (max-width: 575.98px) {
+  .landing {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  hr.rounded {
+    margin-left: 0;
+  }
+
+}
+
+/* For screens between 576px and 991.98px (small devices) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .landing {
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  hr.rounded {
+    margin-left: 10%;
+  }
+}
+
+/* For screens larger than 992px (medium and up devices) */
+@media (min-width: 992px) {
+  .row {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .landing {
+    margin-left: 20%;
+    text-align: left;
+  }
+
+  hr.rounded {
+    margin-left: 20%;
+  }
 }

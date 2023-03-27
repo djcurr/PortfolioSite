@@ -1,36 +1,50 @@
 @import "/src/styles.scss";
 
 .container {
-    font-family: $ibm-plex-sans;
-    background-color: $oxford-blue;
-    color: $cg-blue;
-}
+  font-family: $ibm-plex-sans;
+  background-color: $oxford-blue;
+  color: $cg-blue;
 
-.block-width {
-    display: block;
-    width: 30vw;
-}
-
-h1, h2 {
+  h1, h2 {
     font-family: $ibm-plex-mono;
-}
+    color: $jasmine;
+  }
 
-.shiny-shamrock-color {
-    color: $shiny-shamrock;
-}
-
-.bottom-buffer {
-    padding-bottom: 5rem;
-}
-
-fa-icon {
-    color: $shiny-shamrock;
+  hr.rounded {
+    border-top: 8px solid $burnt-umber;
+  }
 }
 
 .jasmine-color {
-    color: $jasmine;
+  color: $jasmine;
 }
 
-hr.rounded {
-    border-top: 8px solid $burnt-umber
+a {
+  color: $burnt-umber;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: $shiny-shamrock;
+  border-color: $shiny-shamrock;
+
+  &:hover, &:focus {
+    background-color: $jasmine;
+    border-color: $jasmine;
+  }
+}
+
+.rounded-circle {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
