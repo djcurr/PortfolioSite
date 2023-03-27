@@ -38,7 +38,7 @@ $portfolio-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html { -ms-overflow-style: none; scrollbar-width: none; }
+html { -ms-overflow-style: none; scrollbar-width: none; scroll-behavior: smooth;}
 html::-webkit-scrollbar { display: none; }
 
 $ibm-plex-sans: "IBM Plex Sans", sans-serif;
