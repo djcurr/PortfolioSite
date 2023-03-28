@@ -12,7 +12,6 @@ body {
 }
 
 .row {
-  height: 100vh;
   background-color: $oxford-blue;
   color: $cg-blue;
 }
@@ -35,12 +34,6 @@ body {
   line-height: 1.5;
 }
 
-.picture {
-  height: 60vh;
-  width: auto;
-  border-radius: 10%;
-}
-
 .intro {
   font-size: 22px;
   font-weight: 100;
@@ -59,9 +52,14 @@ hr.rounded {
 }
 
 img {
+  max-height: 50vh;
   max-width: 100%;
   border: solid $cg-blue 2px;
-  border-radius: 2px;
+}
+
+.picture {
+  height: auto;
+  border-radius: 5%;
 }
 
 .btn-primary {
@@ -95,6 +93,11 @@ img {
 
   hr.rounded {
     margin-left: 0;
+  }
+
+  .picture {
+    height: auto;
+    width: 100vw;
   }
 
 }
@@ -133,5 +136,9 @@ img {
 
   hr.rounded {
     margin-left: 20%;
+  }
+
+  #image {
+    margin-right: 5rem;
   }
 }
