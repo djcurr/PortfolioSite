@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  about = "Hello! I'm a passionate computer science student at North Carolina State University," +
+    " I first discovered the captivating world of programming back in high school. Ever" +
+    " since diving into Go and exploring its applications in trading and cryptocurrency, my love " +
+    "for computer science has only grown. As I work towards a minor in mathematics, " +
+    "my ultimate goal is to tackle complex Machine Learning and AI problems, harnessing the power of " +
+    "technology to shape a better future."
 }

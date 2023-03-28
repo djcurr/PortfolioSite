@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {faSquareGithub} from "@fortawesome/free-brands-svg-icons";
+import { faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-projects',
@@ -7,5 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  protected readonly faSquareGithub = faSquareGithub;
+  faWindowMaximize = faWindowMaximize;
 }
 
