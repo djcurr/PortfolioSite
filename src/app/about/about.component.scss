@@ -1,47 +1,48 @@
 @import "/src/styles.scss";
 
 .container {
-    font-family: $ibm-plex-sans;
-    background-color: $oxford-blue;
-    color: $cg-blue;
+  font-family: $ibm-plex-sans;
+  background-color: $oxford-blue;
+  color: $cg-blue;
 }
 
-h3, h5 {
-    color: $jasmine;
+h3,
+h5 {
+  color: $jasmine;
 }
 
 ul {
-    list-style-type: square;
-    color: $cg-blue;
-    font-size: 1.2rem;
+  list-style-type: square;
+  color: $cg-blue;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .jasmine-color {
-    color: $jasmine;
+  color: $jasmine;
 }
 
 .burnt-umber-color {
-    color: $burnt-umber;
+  color: $burnt-umber;
 }
 
 .shiny-shamrock-color {
-    color: $shiny-shamrock;
+  color: $shiny-shamrock;
 }
 
 mat-tab-group {
-    color: $shiny-shamrock;
-    font-family: $ibm-plex-mono;
+  color: $shiny-shamrock;
+  font-family: $ibm-plex-mono;
 }
 
 hr.rounded {
-    border-top: 8px solid $burnt-umber;
+  border-top: 8px solid $burnt-umber;
 }
 
 li {
-    text-align: left;
-    color: $cg-blue;
+  text-align: left;
+  color: $cg-blue;
 }

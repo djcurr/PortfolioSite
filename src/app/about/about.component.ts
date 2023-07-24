@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  about = "Hello! I'm a passionate computer science student at North Carolina State University," +
-    " I first discovered the captivating world of programming back in high school. Ever" +
-    " since diving into Go and exploring its applications in trading and cryptocurrency, my love " +
-    "for computer science has only grown. As I work towards a minor in mathematics, " +
-    "my ultimate goal is to tackle complex Machine Learning and AI problems, harnessing the power of " +
-    "technology to shape a better future."
+  about = "I first became interested in Computer Science after creating my first project while in high school, an automated cryptocurrency trading program. I've learned a lot of software engineering principles while at NCSU and I have become even more interested after knowing how much more there is to learn. I'm also working on a minor in Mathematics, and an accelerated Master's degree in Computer Science. If I'm not working on my car or researching something, I'm probably at the lake, and growing up in West Virginia, I love to ski in the winter."
 }
