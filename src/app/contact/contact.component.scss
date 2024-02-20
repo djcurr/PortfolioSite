@@ -1,36 +1,36 @@
 @import "/src/styles.scss";
 
-.container {
+.container-fluid {
   font-family: $ibm-plex-sans;
-  background-color: $oxford-blue;
-  color: $cg-blue;
+  background-color: $background-color;
+  color: $primary-color;
 
   h1, h2 {
     font-family: $ibm-plex-mono;
-    color: $jasmine;
+    color: $primary-color;
   }
 
   hr.rounded {
-    border-top: 8px solid $burnt-umber;
+    border-top: 8px solid $secondary-color;
   }
 }
 
 .jasmine-color {
-  color: $jasmine;
+  color: $primary-color;
 }
 
 a {
-  color: $burnt-umber;
+  color: $secondary-color;
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: $shiny-shamrock;
-  border-color: $shiny-shamrock;
+  background-color: $accent-color;
+  border-color: $accent-color;
 
   &:hover, &:focus {
-    background-color: $jasmine;
-    border-color: $jasmine;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 }
 

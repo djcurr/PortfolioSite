@@ -1,134 +1,124 @@
 @import "/src/styles.scss";
 
+.landing-page {
+  background:$background-color; // Darker gradient from blue-grey to lighter grey
+  min-height: 100vh;
+  color: $text-color;
+  padding: 2rem;
 
-.row {
-  background-color: $oxford-blue;
-  color: $cg-blue;
-}
-
-.name {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.2;
-}
-
-.name2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.intro {
-  font-size: 30px;
-  font-weight: 300;
-}
-
-hr.rounded {
-  border-top: 8px solid $burnt-umber
-}
-
-.jasmine-color {
-  color: $jasmine;
-}
-
-.shiny-shamrock-color {
-  color: $shiny-shamrock;
-}
-
-img {
-  max-height: 50vh;
-  max-width: 100%;
-  border: solid $cg-blue 2px;
-}
-
-.picture {
-  height: auto;
-  border-radius: 5%;
-}
-
-.btn-primary {
-  background-color: $burnt-umber;
-  border-color: $jasmine;
-  color: $jasmine;
-  transition: all 0.3s ease-in-out;
-  &:hover,
-  &:focus {
-    background-color: darken($cg-blue, 10%);
-    border-color: darken($cg-blue, 10%);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  .intro {
+    font-size: 2rem;
+    font-weight: 450;
+    color: $accent-color;
   }
-}
 
-.modal-content {
-  max-height: 100%;
-  background-color: $oxford-blue;
-}
+  .name {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
 
-.modal-header {
-  color: $jasmine;
-}
-
-/* For screens smaller than 576px (extra small devices) */
-@media (max-width: 575.98px) {
-  .landing {
-    margin-left: 0;
-    text-align: center;
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
   }
 
   hr.rounded {
-    margin-left: 0;
+    border-top: 3px solid $secondary-color;
+    width: 50%; // Adjust width to your liking
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &-accent {
+      background-color: $accent-color;
+      color: $light-text-color; // Ensure this is defined in your variables, e.g., #ffffff
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+
+    &-secondary {
+      background-color: $secondary-color;
+      color: $light-text-color;
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
   }
 
   .picture {
-    height: auto;
-    width: 100vw;
+    max-height: 50vh;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3); // Increased shadow for depth
+    margin-bottom: 2rem;
   }
 
+  .modal-content {
+    background-color: $background-color;
+    color: $text-color;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid $secondary-color;
+  }
 }
 
-/* For screens between 576px and 991.98px (small devices) */
+/* Responsive design adjustments */
+@media (max-width: 575.98px) {
+  .landing-page {
+    .name {
+      font-size: 3rem;
+    }
+    .text, .intro {
+      font-size: 1.25rem;
+    }
+    .picture {
+      max-height: 40vh; // Adjust image size for small devices
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .landing {
-    margin-left: 10%;
-    text-align: left;
-  }
-
-  hr.rounded {
-    margin-left: 10%;
+  .landing-page {
+    .name {
+      font-size: 3.5rem;
+    }
   }
 }
 
-/* For screens larger than 992px (medium and up devices) */
 @media (min-width: 992px) {
-  .row {
-    min-height: 100vh;
+  .landing-page {
+    .col-sm:first-child {
+      padding-right: 4rem;
+    }
+    .col-sm:last-child {
+      padding-left: 4rem;
+    }
+    .intro, .text, .name {
+      text-align: left;
+    }
+    .picture {
+      margin-right: 5rem;
+    }
   }
+}
 
-  .col-sm:first-child {
-    margin-bottom: 0;
-    padding-right: 4rem;
+@media (max-width: 767px) {
+  .button-group {
+    justify-content: center; // Center buttons on small screens
   }
-
-  .col-sm:last-child {
-    padding-left: 4rem;
-  }
-
-  .landing {
-    margin-left: 20%;
-    text-align: left;
-  }
-
-  hr.rounded {
-    margin-left: 20%;
-  }
-
-  #image {
-    margin-right: 5rem;
+  .picture {
+    max-width: 80vw;
   }
 }

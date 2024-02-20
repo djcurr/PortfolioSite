@@ -1,48 +1,107 @@
 @import "/src/styles.scss";
 
-.container {
-  font-family: $ibm-plex-sans;
-  background-color: $oxford-blue;
-  color: $cg-blue;
+.container-fluid {
+  background: $background-color;
+  padding: 20px;
 }
 
-h3,
-h5 {
-  color: $jasmine;
+.primary-text {
+  color: $primary-color;
+}
+
+.secondary-text {
+  color: $secondary-color;
+}
+
+.accent-text {
+  color: $accent-color;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $primary-color;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 2rem; // Smaller font size for mobile devices
+  }
 }
 
 ul {
-  list-style-type: square;
-  color: $cg-blue;
   font-size: 1.2rem;
+
+  li {
+    text-align: left;
+    color: $text-color;
+  }
 }
 
 p {
+  line-height: 1.6;
+  margin: 0 auto;
   font-size: 1.25rem;
 }
 
-.jasmine-color {
-  color: $jasmine;
-}
-
-.burnt-umber-color {
-  color: $burnt-umber;
-}
-
-.shiny-shamrock-color {
-  color: $shiny-shamrock;
-}
-
 mat-tab-group {
-  color: $shiny-shamrock;
-  font-family: $ibm-plex-mono;
+  color: $accent-color;
+}
+
+@media (min-width: 768px) {
+  p {
+    max-width: 50vw;
+  }
+
+  mat-card {
+    max-width: 30vw;
+  }
+
+}
+
+mat-tab {
+  color: $text-color;
+  font-weight: bold;
+}
+
+.education-skills-card {
+  background: $secondary-color;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+  height: 100%;
+}
+
+
+//@media (min-width: 992px) { // Adjust for lg screens
+//  .row > [class^="col-"] {
+//    display: flex;
+//    align-items: center; // This will vertically center the content
+//    justify-content: center; // This will horizontally center the content
+//  }
+//}
+
+.about-me {
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $text-color;
 }
 
 hr.rounded {
-  border-top: 8px solid $burnt-umber;
+  border-top: 3px solid $secondary-color;
+  margin-left: auto;
+  margin-right: auto; // Center the line
+  width: 95%; // Adjust the width to match the content
 }
 
-li {
-  text-align: left;
-  color: $cg-blue;
+.picture {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90vw;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3); // Increased shadow for depth
+  //margin: 2rem;
 }
