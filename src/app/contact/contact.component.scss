@@ -1,50 +1,22 @@
-@import "/src/styles.scss";
+@use 'src/app/_colors' as colors;
 
 .container-fluid {
-  font-family: $ibm-plex-sans;
-  background-color: $background-color;
-  color: $primary-color;
+  //background-color: colors.$background-color;
+  color: colors.$primary-color;
 
   h1, h2 {
-    font-family: $ibm-plex-mono;
-    color: $primary-color;
+    color: colors.$text-color;
   }
 
   hr.rounded {
-    border-top: 8px solid $secondary-color;
+    border-top: 3px solid colors.$primary-color;
+    margin-left: auto;
+    margin-right: auto; // Center the line
+    max-width: 30%; // Adjust the width to match the content
   }
-}
-
-.jasmine-color {
-  color: $primary-color;
 }
 
 a {
-  color: $secondary-color;
+  color: colors.$accent-color;
   text-decoration: none;
-}
-
-.btn-primary {
-  background-color: $accent-color;
-  border-color: $accent-color;
-
-  &:hover, &:focus {
-    background-color: $primary-color;
-    border-color: $primary-color;
-  }
-}
-
-.rounded-circle {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.shadow {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }

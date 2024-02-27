@@ -1,0 +1,86 @@
+@use 'src/app/_colors' as colors;
+@use 'src/app/_defaults' as defaults;
+
+.container-fluid {
+  width: defaults.$container-width;
+}
+
+h1 {
+  font-weight: bold;
+  color: colors.$text-color;
+}
+
+.experience-card {
+
+  background: linear-gradient(135deg, colors.$card-end, colors.$secondary-color);
+  border-radius: defaults.$base-border-radius;
+  -webkit-border-radius: defaults.$base-border-radius;
+  -moz-border-radius: defaults.$base-border-radius;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1); // Example shadow - adjust as needed
+  padding: 1rem; // Add some padding inside the card
+  margin-bottom: 2rem; // Add some margin at the bottom of each card
+
+  .experience-image {
+    max-height: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: defaults.$base-border-radius;
+    -webkit-border-radius: defaults.$base-border-radius;
+    -moz-border-radius: defaults.$base-border-radius;
+  }
+}
+
+.skill-image {
+  border-radius: defaults.$base-border-radius;
+  -webkit-border-radius: defaults.$base-border-radius;
+  -moz-border-radius: defaults.$base-border-radius;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+}
+
+.information-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    color: colors.$text-color;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: colors.$primary-color; // Use primary color for bullets
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// Ensure .experience-date and .experience-location are styled as desired
+.experience-date, .experience-location, .experience-title {
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 1.2rem; // Adjust as needed
+  color: colors.$text-color; // Match the text color scheme
+}
+
+.experience-company {
+  padding: 0;
+  color: colors.$text-color;
+  line-height: 1.5;
+}
+
+.rounded {
+  border-top: 3px solid colors.$primary-color;
+  max-width: defaults.$max-divider-width;
+  margin-left: auto;
+  margin-right: auto;
+}

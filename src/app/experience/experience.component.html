@@ -1,0 +1,49 @@
+<div class="container-fluid px-0">
+  <section class="row" data-aos="fade-right">
+    <div class="col-12">
+      <h1 class="text-center mb-3">Experience</h1>
+      <hr class="rounded" />
+    </div>
+  </section>
+
+  <div *ngFor="let experience of experiences" class="experience-card d-flex flex-column flex-md-row align-items-center" data-aos="fade-right">
+
+    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+      <a href="{{ experience.companyWebsite }}" target="_blank" rel="noopener noreferrer">
+        <img [src]="experience.imageLink" alt="{{ experience.company }}" class="img-fluid experience-image"/>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-8 d-flex flex-column mt-3 mt-md-0">
+      <div class="row ps-3">
+        <div class="col-6 d-flex flex-column justify-content-center text-start">
+          <h3 class="experience-company my-auto">{{ experience.company }}</h3>
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center text-end">
+          <p class="experience-location my-auto">{{ experience.location }}</p>
+        </div>
+      </div>
+
+      <div class="row ps-3">
+        <div class="col-6 d-flex flex-column justify-content-center text-start">
+          <p class="experience-title my-auto">{{ experience.title }}</p>
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center text-end">
+          <p class="experience-date my-auto">{{ experience.date }}</p>
+        </div>
+      </div>
+
+      <div class="row ps-3">
+        <div class="col-6 d-flex">
+          <div *ngFor="let skill of experience.skills" class="text-start my-md-2 me-md-2">
+            <img [src]="mapSkillToImage(skill)" alt="{{ skill }}" class="skill-image"/>
+          </div>
+        </div>
+      </div>
+
+      <ul class="information-list">
+        <li *ngFor="let info of experience.information">{{ info }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { About } from "./about.model";
 
 
 @Component({
@@ -6,6 +7,29 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
+
 export class AboutComponent {
-  about = "I'm Derek Curry, a Computer Science major at NCSU with an eye on an accelerated Master's degree and a minor in Mathematics. As a software engineer intern at HCLTech, I apply my skills in Docker, Kubernetes, and Google Cloud to develop and fine-tune software solutions that have a real-world impact. When not coding or contributing to cloud development, I'm often found enjoying the great outdoors or delving into my next project. Explore my work to see my approach to practical applications."
+  about = "Hi, I'm Derek – a Computer Science major at NC State with an interest in software development and a side passion for mathematics. My academic accomplishments are matched with real-world tech experience, where I've developed services and APIs for a Kubernetes application. Beyond the code, my hands-on project rebuilding a Tesla Model 3 has given me a unique perspective on technology's tangible impact. Here, you'll find a portfolio that mirrors my commitment to clean code, innovative problem-solving, and a collaborative spirit. Dive in and let's connect over creating impactful tech solutions."
+  skills: About[] = [
+    {
+      label: "Education",
+      items: [["North Carolina State University", ""], ["May 2025", ""], ["Cumulative GPA: 3.93", ""], ["Major GPA: 4.0", ""], ["Dean's List", ""]]
+    },
+    {
+      label: "Languages",
+      items: [["JavaScript", "javascript"], ["Java", ""], ["Go", "go"], ["C", "c&logoColor=blue"], ["C++", "cplusplus&logoColor=blue"], ["HTML", "html5"], ["CSS", "css3&logoColor=blue"]],
+    },
+    {
+      label: "Frameworks",
+      items: [["Kubernetes", "kubernetes"], ["OpenAPI", "openapiinitiative"], ["Prometheus", "prometheus"], ["Node.js", "nodedotjs"], ["Angular", "angular&logoColor=red"], ["Bootstrap", "bootstrap"], ["RESTful API", ""], ["JUnit", "junit5"], ["MongoDB", "mongodb"], ["Jenkins", "jenkins"]]
+    },
+    {
+      label: "Developer Tools",
+      items: [["Git", "git"], ["Docker", "docker"], ["Google Cloud Platform", "google-cloud"], ["Visual Studio", "visual-studio&logoColor=blue"], ["Eclipse", "eclipse&logoColor=purple"], ["Jetbrains Tools", "jetbrains&logoColor=black"]]
+    },
+  ]
+
+  mapSkillToImage(skill: string[]) {
+    return "https://img.shields.io/badge/" + skill[0] + "-dee0e3?logo=" + skill[1]
+  }
 }

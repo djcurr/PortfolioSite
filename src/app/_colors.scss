@@ -1,30 +1,8 @@
 ///* SCSS HSL */
-//$accent-color: hsla(109, 53%, 83%, 1);
-////$background-color: hsla(211, 96%, 9%, 1);
-//$secondary-color: hsla(5, 65%, 33%, 1);
-////$primary-color: hsla(200, 59%, 39%, 1);
-//$text-color: hsla(47, 92%, 74%, 1);
-//
-//$primary-color: #f0f0f0;
-//$primary-color: #f0f0f0;
-//$background-color: #0056b3;
-////$primary-color: #0056b3; // Example primary color (adjust as needed)
-//$primary-color: $primary-color; // Darker text for better readability
-//$heading-color: $primary-color; // Use primary color for headings
-
-// background, primary, secondary, accent, text
-
-//$background-color: #0056b3;
-//$primary-color: #f0f0f0;
-//$secondary-color: hsla(5, 65%, 33%, 1);
-//$accent-color: hsla(109, 53%, 83%, 1);
-//$text-color: hsla(47, 92%, 74%, 1);
-
-// Use a soft, neutral color for the background to provide a calm and professional look
 $background-color: linear-gradient(to right, #7a9bae, #899da4);
-
 $primary-color: #34678a; // A deep blue/teal
 $secondary-color: #495867; // A navy/dark grey
 $accent-color: #EBB56F; // A softer coral for a pop of color
-$text-color: #f4f4f4; // A soft white/light grey for text
+$text-color: #dee0e3; // A soft white/light grey for text
 $light-text-color: #000000; // For text on light background
+$card-end: #1d2630;

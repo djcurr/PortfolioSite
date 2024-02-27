@@ -1,243 +1,37 @@
-<div class="container-fluid mb-5">
+<div class="container-fluid px-0">
   <section class="row" data-aos="fade-right">
-    <h1 class="mx-auto text-center mb-3 display-4 display-md-1">Projects</h1>
-    <hr class="rounded mb-3" />
-    <h3 class="mx-auto text-center mb-3">Things I've worked on</h3>
+    <div class="col-12">
+      <h1 class="text-center mb-3">Projects</h1>
+      <hr class="rounded" />
+    </div>
   </section>
 
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto">
-      <h3>WisdomBots</h3>
-      <h5>
-        A website allowing users to purchase cryptocurrency trading bots. The
-        service also provided instructional videos, frequently asked questions,
-        and an affiliate system. The website was implemented with Bootstrap and
-        used my cryptocurrency transaction handler.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          class="me-3"
-          href="https://github.com/djcurr/WisdomBots"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+  <!-- Adding responsive classes to change flex direction based on screen size -->
+  <div *ngFor="let project of projects" class="mb-5 project-card d-flex flex-column flex-md-row align-items-center" data-aos="fade-right">
+
+    <div class="col-12 col-md-6 d-flex flex-column">
+      <h3 class="text-center mt-auto">{{ project.title }}</h3>
+      <div class="row px-0 mx-0">
+        <div class="col-12 d-flex px-0">
+          <div *ngFor="let skill of project.skills" class="text-start my-0 me-md-2">
+            <img [src]="mapSkillToImage(skill)" alt="{{ skill }}" class="skill-image my-0"/>
+          </div>
+        </div>
+      </div>
+      <p class="text-left mt-2 mb-3">{{ project.description }}</p>
+      <div class="d-flex justify-content-center align-items-center mt-3 mt-md-0">
+        <a *ngIf="project.githubUrl" href="{{ project.githubUrl }}" class="icon-link me-3" target="_blank" rel="noopener noreferrer">
           <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
         </a>
-        <a
-          class="ms-3"
-          href="https://djcurr.github.io/WisdomBots/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a *ngIf="project.liveUrl" href="{{ project.liveUrl }}" class="icon-link ms-3" target="_blank" rel="noopener noreferrer">
           <fa-icon [icon]="faWindowMaximize" size="3x"></fa-icon>
         </a>
       </div>
     </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://djcurr.github.io/WisdomBots/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/assets/wisdombots.png" alt="" class="img-fluid" />
-      </a>
-    </div>
-  </div>
 
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto">
-      <h3>Cryptocurrency Transaction Handler</h3>
-      <h5>
-        Cryptocurrency Transaction Handler is a robust and versatile web
-        application that allows users to pay for products using cryptocurrency.
-        The service verifies the transaction, generate a license key, and sends
-        it to the user in an email. Cryptocurrency Transaction Handler is built
-        using a variety of technologies, including Go, GoEthereum, MongoDB,
-        HTML, CSS, Gin Web, Bootstrap, and jQuery.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          href="https://github.com/djcurr/WisdomBots/tree/master/transactionHandler"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://github.com/djcurr/WisdomBots/tree/master/transactionHandler"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/assets/transaction-handler.png" alt="" class="img-fluid" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto">
-      <h3>Pathfinding Visualization</h3>
-      <h5>
-        A fast WebAssembly application that allows users to visualize
-        pathfinding algorithms. Users can place walls, move the start and end
-        nodes, and see the algorithm process in action. This was built in Go
-        using WebAssembly, Go, and JavaScript.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          class="me-3"
-          href="https://github.com/djcurr/Pathfinding-Visualization"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
-        </a>
-        <a
-          class="ms-3"
-          href="https://djcurr.github.io/Pathfinding-Visualization/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faWindowMaximize" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://djcurr.github.io/Pathfinding-Visualization/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/assets/pathfinder.png" alt="" class="img-fluid" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto mx-auto">
-      <h3>Tesla MCU Reverse Engineering</h3>
-      <h5>
-        The Tesla MCU has become an incredibly secure piece of hardware,
-        incorporating many layers of hardening. I would like to learn how the
-        MCU controls the car by dumping and analyzing the firmware. I am
-        beginning by looking at hardware vulnerabilities and how different
-        components communicate.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          href="https://github.com/djcurr/Tesla-MCU-Reverse-Engineering"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://github.com/djcurr/Tesla-MCU-Reverse-Engineering"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="img-fluid"
-      >
-        <img src="/assets/mcu.jpg" alt="" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto mx-auto">
-      <h3>Tesla Rebuild</h3>
-      <h5>
-        I began a large project to restore a heavily damaged Tesla, which has
-        given me a deep understanding of electric vehicle components and
-        systems. There was a great deal of problem solving involved with the
-        mechanical and electrical systems due to having little information or
-        proper tools. This created my interest in what controls all of the
-        systems in the car.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          href="https://photos.app.goo.gl/tm9LPLZsxsRMwaPS9"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faWindowMaximize" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://photos.app.goo.gl/tm9LPLZsxsRMwaPS9"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="img-fluid"
-      >
-        <img src="/assets/car1.jpg" alt="" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto mx-auto">
-      <h3>Automated Cryptocurrency Trading</h3>
-      <h5>
-        A program that executes cryptocurrency trades based on market
-        indicators. This was one of my first projects and what helped me realize
-        what I could do with programming.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          href="https://github.com/djcurr/BotLife"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://github.com/djcurr/BotLife"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="img-fluid"
-      >
-        <img src="/assets/bot.png" alt="" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row mb-3" data-aos="fade-right">
-    <div class="col-sm my-auto mx-auto">
-      <h3>Portfolio Website</h3>
-      <h5>
-        This website is designed to showcase my skills and experience in
-        computer science. With a clean and modern design, it provides a brief
-        overview of my education and the projects I've worked on. The website is
-        built using HTML, CSS, TypeScript, Bootstrap, and Angular, with
-        responsive design that adapts to different screen sizes.
-      </h5>
-      <div class="text-center mt-4">
-        <a
-          href="https://github.com/djcurr/PortfolioSite"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <fa-icon [icon]="faSquareGithub" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm text-center my-auto">
-      <a
-        href="https://github.com/djcurr/PortfolioSite"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="img-fluid"
-      >
-        <img src="/assets/site.png" alt="" />
+    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center mt-3 mt-md-0">
+      <a href="{{ project.liveUrl || project.githubUrl }}" target="_blank" rel="noopener noreferrer">
+        <img [src]="project.imageUrl" alt="{{ project.title }}" class="img-fluid"/>
       </a>
     </div>
   </div>
