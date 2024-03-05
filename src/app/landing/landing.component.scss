@@ -1,6 +1,5 @@
 @use 'src/app/_colors' as colors;
 @use 'src/app/_defaults' as defaults;
-@import 'bootstrap/scss/bootstrap';
 
 .landing-page {
   min-height: 100vh;
@@ -98,7 +97,6 @@ iframe {
   min-height: 70vh;
 }
 
-/* Additional Responsive Adjustments */
 @media (max-width: 575.98px) {
   .button-group {
     display: flex;

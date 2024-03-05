@@ -104,6 +104,6 @@ h1 {
 .rounded {
   border-top: 3px solid colors.$primary-color;
   margin-left: auto;
-  margin-right: auto; // Center the line
-  max-width: defaults.$max-divider-width; // Adjust the width to match the content
+  margin-right: auto;
+  max-width: defaults.$max-divider-width;
 }

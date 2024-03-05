@@ -5,8 +5,7 @@
       <h2 class="name">Derek Curry</h2>
       <hr class="rounded" />
       <p class="text">
-        I specialize in cloud development, leveraging platforms like GCP to deploy scalable and resilient applications.
-        Check out my projects to see what I've been working on.
+        {{ landing }}
       </p>
       <div class="text-center button-group">
         <a routerLink="." fragment="projects" class="btn btn-accent">View My Projects</a>
@@ -19,7 +18,6 @@
   </div>
 </div>
 
-<!-- Modal for Resume -->
 <ng-template #content let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Resume</h4>
