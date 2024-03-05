@@ -26,7 +26,7 @@ export class ProjectsComponent {
     // },
     {
       title: 'Pathfinding Visualization',
-      description: 'A fast WebAssembly application that allows users to visualize pathfinding algorithms. Users can place walls, move the start and end nodes, and see the algorithm process in action. This was built in Go using WebAssembly, Go, and JavaScript.',
+      description: 'A fast WebAssembly application that allows users to visualize pathfinding algorithms. Users can place walls, move the start and end nodes, and see the algorithm process in action. This was built in Go using WebAssembly and JavaScript.',
       imageUrl: '/assets/pathfinder.png',
       skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["Go", "go"], ["JavaScript", "javascript"], ["WebAssembly", "webassembly"], ["Algorithms", ""]],
       githubUrl: 'https://github.com/djcurr/Pathfinding-Visualization',

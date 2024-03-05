@@ -10,6 +10,7 @@ import { About } from "./about.model";
 
 export class AboutComponent {
   about = "Hi, I'm Derek – a Computer Science major at NC State with an interest in software development and a side passion for mathematics. My academic accomplishments are matched with real-world tech experience, where I've developed services and APIs for a Kubernetes application. Beyond the code, my hands-on project rebuilding a Tesla Model 3 has given me a unique perspective on technology's tangible impact. Here, you'll find a portfolio that mirrors my commitment to clean code, innovative problem-solving, and a collaborative spirit. Dive in and let's connect over creating impactful tech solutions."
+  aboutShort = "Hi, I'm Derek – a Computer Science major at NC State with an interest in software development and a side passion for mathematics. My academic accomplishments are matched with real-world tech experience, where I've developed services and APIs for a Kubernetes application."
   skills: About[] = [
     {
       label: "Education",
@@ -30,6 +31,10 @@ export class AboutComponent {
   ]
 
   mapSkillToImage(skill: string[]) {
-    return "https://img.shields.io/badge/" + skill[0] + "-dee0e3?logo=" + skill[1]
+    let color = "dee0e3";
+    if (skill[0] === "North Carolina State University") {
+      color = "df0000"
+    }
+    return "https://img.shields.io/badge/" + skill[0] + "-" + color + "?logo=" + skill[1]
   }
 }
