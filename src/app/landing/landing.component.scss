@@ -1,6 +1,10 @@
 @use 'src/app/_colors' as colors;
 @use 'src/app/_defaults' as defaults;
 
+.container-fluid {
+  background-color: colors.$background-color;
+}
+
 .landing-page {
   min-height: 100vh;
   color: colors.$text-color;
@@ -19,7 +23,7 @@
   .name {
     font-weight: 700;
     line-height: 1.2;
-    color: colors.$primary-color;
+    color: colors.$text-color;
     margin-bottom: 1rem;
     font-size: 3rem;
 
@@ -47,6 +51,9 @@
   }
 
   .btn {
+    @media (max-width: 992px) {
+      margin: 1rem 1rem;
+    }
     margin: 0 1rem;
     padding: 0.75rem 1.5rem;
     border-radius: defaults.$base-border-radius;
@@ -66,11 +73,14 @@
     }
 
     &-secondary {
-      background-color: colors.$secondary-color;
-      color: colors.$light-text-color;
+      background-color: colors.$background-color;
+      color: colors.$text-color;
+      border: 2px solid colors.$accent-color;
 
       &:hover {
-        background-color: darken(colors.$secondary-color, 10%);
+        color: colors.$light-text-color;
+        background-color: darken(colors.$accent-color, 10%);
+        border: 2px solid colors.$background-color;
       }
     }
   }

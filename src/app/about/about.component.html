@@ -8,17 +8,17 @@
 
   <div class="row mx-0">
     <div class="col-12 px-0">
-      <img src="./assets/mountain.jpg" class="img-fluid picture" alt="Mountain">
+      <img src="/assets/mountain.jpg" class="img-fluid picture" alt="Mountain"/>
     </div>
   </div>
 
   <div class="row d-flex justify-content-between mx-0">
-    <div class="col-12 col-md-6 about-me">
+    <div class="col-12 col-lg-6 about-me">
       <p class="d-none d-md-block">{{ about }}</p>
       <p class="d-md-none">{{ aboutShort }}</p>
     </div>
 
-    <div class="col-12 col-md-6 education-skills-card">
+    <div class="col-12 col-lg-6 education-skills-card">
       <mat-card class="h-100">
         <mat-tab-group animationDuration="75ms" class="h-100">
           <mat-tab *ngFor="let category of skills" label="{{ category.label }}">

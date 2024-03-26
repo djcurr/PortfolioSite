@@ -13,6 +13,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatCardModule} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
 import {ExperienceComponent} from "./experience/experience.component";
+import {CIModule, CIConfig, CI_CONFIG} from 'ng-cloudimage-responsive';
+
+const ciConfig: Partial<CIConfig> = {
+  token: 'cjddvdjbma',
+  baseUrl: 'https://derekcurrycompsci.com/assets/',
+  apiVersion: ''
+};
 
 @NgModule({
   declarations: [
@@ -31,9 +38,12 @@ import {ExperienceComponent} from "./experience/experience.component";
     FontAwesomeModule,
     MatCardModule,
     NgbModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CIModule
   ],
-  providers: [],
+  providers: [
+    { provide: CI_CONFIG, useValue: ciConfig }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

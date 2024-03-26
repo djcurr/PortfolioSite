@@ -24,10 +24,10 @@
   border-radius: defaults.$base-border-radius;
   -moz-border-radius: defaults.$base-border-radius;
   -webkit-border-radius: defaults.$base-border-radius;
-  background: colors.$secondary-color;
-  @media (min-width: 768px) {
-    background: linear-gradient(215deg, colors.$secondary-color, colors.$card-end);
+  @media (min-width: 992px) {
+    background: linear-gradient(315deg, colors.$secondary-color, colors.$card-end);
   }
+  background-color: colors.$secondary-color;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
   p, mat-card {
@@ -55,13 +55,12 @@
 }
 
 .education-skills-card {
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     margin-top: 1rem;
   }
   padding: 0;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     background: linear-gradient(135deg, colors.$secondary-color, colors.$card-end);
-    padding-bottom: 1rem;
   }
 }
 
@@ -96,7 +95,7 @@ mat-tab-group {
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about-me, .education-skills-card {
     max-width: calc((100% - 1rem) / 2);
   }

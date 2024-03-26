@@ -10,7 +10,10 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, colors.$secondary-color, colors.$card-end);
+  @media (min-width: 576px) {
+    background: linear-gradient(315deg, colors.$secondary-color, colors.$card-end);
+  }
+  background-color: colors.$secondary-color;
   border-radius: defaults.$base-border-radius;
   -moz-border-radius: defaults.$base-border-radius;
   -webkit-border-radius: defaults.$base-border-radius;

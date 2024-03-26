@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
 @import "./app/colors";
+@import "./app/defaults";
 @include mat.core();
 
 /* You can add global styles to this file, and also import other style files */
@@ -10,10 +11,11 @@ html::-webkit-scrollbar { display: none; }
 
 $base-font-size: 18px;
 $base-font-weight: 400;
-html, body { height: 100%; background: $background-color;}
+html, body { height: 100%; background-color: $background-color;}
 body { margin: 0; }
 .mdc-tab.mat-mdc-tab { padding: 0.7rem; }
 .mat-mdc-tab-body-wrapper { height: 100%; }
+//img { border-radius: $base-border-radius;-moz-border-radius: $base-border-radius;-webkit-border-radius: $base-border-radius; }
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

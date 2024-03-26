@@ -15,7 +15,10 @@ h1 {
 }
 
 .experience-card {
-  background: linear-gradient(135deg, colors.$card-end, colors.$secondary-color);
+  @media (min-width: 576px) {
+    background: linear-gradient(135deg, colors.$card-end, colors.$secondary-color);
+  }
+  background-color: colors.$secondary-color;
   border-radius: defaults.$base-border-radius;
   -moz-border-radius: defaults.$base-border-radius;
   -webkit-border-radius: defaults.$base-border-radius;
@@ -99,6 +102,10 @@ h1 {
   font-size: 1.2rem;
   color: colors.$text-color;
   line-height: 1.2;
+}
+
+.experience-company {
+  font-size: 1.6rem;
 }
 
 .rounded {
