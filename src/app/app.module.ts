@@ -34,7 +34,7 @@ import {ExperienceComponent} from "./experience/experience.component";
     NgOptimizedImage
   ],
   providers: [
-    provideNetlifyLoader()
+    provideNetlifyLoader('https://derekcurrycompsci.com/')
   ],
   bootstrap: [AppComponent]
 })
