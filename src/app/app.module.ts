@@ -11,15 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatCardModule} from "@angular/material/card";
-import {NgOptimizedImage} from "@angular/common";
+import {NgOptimizedImage, provideNetlifyLoader} from "@angular/common";
 import {ExperienceComponent} from "./experience/experience.component";
-import {CIModule, CIConfig, CI_CONFIG} from 'ng-cloudimage-responsive';
-
-const ciConfig: Partial<CIConfig> = {
-  token: 'cjddvdjbma',
-  baseUrl: 'https://derekcurrycompsci.com/assets/',
-  apiVersion: ''
-};
 
 @NgModule({
   declarations: [
@@ -38,11 +31,10 @@ const ciConfig: Partial<CIConfig> = {
     FontAwesomeModule,
     MatCardModule,
     NgbModule,
-    NgOptimizedImage,
-    CIModule
+    NgOptimizedImage
   ],
   providers: [
-    { provide: CI_CONFIG, useValue: ciConfig }
+    provideNetlifyLoader()
   ],
   bootstrap: [AppComponent]
 })

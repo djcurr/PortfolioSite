@@ -29,7 +29,7 @@
 
     <div class="project-image col-12 col-md-6">
       <a href="{{ project.liveUrl || project.githubUrl }}" target="_blank" rel="noopener noreferrer">
-        <img [src]="project.imageUrl" alt="{{ project.title }}" class="img-fluid"/>
+        <img [ngSrc]="project.imageUrl" alt="{{ project.title }}" class="img-fluid" [width]="project.imageWidth" [height]="project.imageHeight" placeholder/>
       </a>
     </div>
   </div>

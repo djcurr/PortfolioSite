@@ -86,6 +86,7 @@
   }
 
   .picture {
+    width: auto;
     max-height: 40vh;
     border-radius: defaults.$base-border-radius;
     -moz-border-radius: defaults.$base-border-radius;

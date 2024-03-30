@@ -61,6 +61,7 @@
   }
 
   img, .skill-image {
+    width: auto;
     max-height: 20rem;
     border-radius: defaults.$base-border-radius;
     -moz-border-radius: defaults.$base-border-radius;
