@@ -15,8 +15,15 @@
 
   <div class="row d-flex justify-content-between mx-0">
     <div class="col-12 col-lg-6 about-me">
-      <p class="d-none d-md-block">{{ about }}</p>
-      <p class="d-md-none">{{ aboutShort }}</p>
+      <p class="d-none d-md-block">
+        @for(sentence of about.split("\n"); track $index) {
+          {{ sentence }} <br/>
+        }
+      </p>
+      <p class="d-md-none">
+        @for(sentence of aboutShort.split("\n"); track $index) {
+          {{ sentence }} <br/>
+        }
     </div>
 
     <div class="col-12 col-lg-6 education-skills-card">

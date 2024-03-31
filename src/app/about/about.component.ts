@@ -9,12 +9,12 @@ import { About } from "./about.model";
 })
 
 export class AboutComponent {
-  about = "Hi, I'm Derek – a Computer Science major at NC State with an interest in software development and a side passion for mathematics. My academic accomplishments are matched with real-world tech experience, where I've developed services and APIs for a Kubernetes application. Beyond the code, my hands-on project rebuilding a Tesla Model 3 has given me a unique perspective on technology's tangible impact. Here, you'll find a portfolio that mirrors my commitment to clean code, innovative problem-solving, and a collaborative spirit. Dive in and let's connect over creating impactful tech solutions."
-  aboutShort = "Hi, I'm Derek – a Computer Science major at NC State with an interest in software development and a side passion for mathematics. My academic accomplishments are matched with real-world tech experience, where I've developed services and APIs for a Kubernetes application."
+  about = "I'm Derek – a Computer Science major at NC State. I've worked on real-world problems inside and outside the classroom. During my year with HCL Tech, I have received two contract extensions, contributed many features to production, learned many new technologies, solidified design principles, communicated with different teams, and made great friends.\n\nOutside my professional and academic life, I enjoy learning and working on personal projects such as this website and my pathfinding visualizer (check them out!). In my free time I most enjoy skiing, along with camping and hiking when I can't ski. I took the picture above at Snowbird in Utah!"
+  aboutShort = "I'm Derek – a Computer Science major at NC State. I've worked on real-world problems inside and outside the classroom. During my year with HCL Tech, I have contributed many features to production, learned many new technologies, solidified design principles, and made great friends.\n\nOutside my professional and academic life, I enjoy learning and working on personal projects such as my pathfinding visualizer. In my free time I most enjoy skiing, along with camping and hiking when I can't ski. I took the picture above at Snowbird in Utah!"
   skills: About[] = [
     {
       label: "Education",
-      items: [["North Carolina State University", ""], ["May 2025", ""], ["Cumulative GPA: 3.93", ""], ["Major GPA: 4.0", ""], ["Dean's List", ""]]
+      items: [["North Carolina State University", ""], ["Computer Science", ""], ["May 2025", ""], ["Cumulative GPA: 3.93", ""], ["Major GPA: 4.0", ""], ["Dean's List", ""]]
     },
     {
       label: "Languages",

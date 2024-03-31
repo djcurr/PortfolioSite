@@ -1,34 +1,34 @@
-import { Component } from '@angular/core';
-import { Project} from "./projects.model";
+import {Component} from '@angular/core';
+import {Project} from "./projects.model";
 import {faSquareGithub} from "@fortawesome/free-brands-svg-icons";
-import { faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
+import {faWindowMaximize} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
+
 export class ProjectsComponent {
   projects: Project[] = [
     {
       title: 'Pathfinding Visualization',
-      description: 'A fast WebAssembly application that allows users to visualize pathfinding algorithms. Users can place walls, move the start and end nodes, and see the algorithm process in action. This was built in Go using WebAssembly and JavaScript.',
+      description: 'A fast WebAssembly application that allows users to visualize pathfinding algorithms. Users can place walls, move the start and end nodes, and see the algorithm process in action. This was created with object-oriented design principles and thorough error handling as the primary focus. Low-level concepts such as shared-memory were required to interface between JS and Go. Bootstrap was used to create a clean and responsive page, and Angular for dynamic content. Check out the Readme!',
       imageUrl: '/assets/pathfinder.png',
       imageWidth: 1312,
       imageHeight: 923,
-      skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["Go", "go"], ["JavaScript", "javascript"], ["WebAssembly", "webassembly"], ["Algorithms", ""]],
+      skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["Go", "go"], ["JavaScript", "javascript"], ["WebAssembly", "webassembly"], ["Angular", "angular&logoColor=red"], ["Algorithms", ""]],
       githubUrl: 'https://github.com/djcurr/Pathfinding-Visualization',
       liveUrl: 'https://djcurr.github.io/Pathfinding-Visualization/',
     },
     {
       title: 'Portfolio Website',
-      description: 'This website is designed to showcase my skills and experience in computer science. With a clean and modern design, it provides a brief overview of my education and the projects I\'ve worked on. The website is built using HTML, CSS, TypeScript, Bootstrap, and Angular, with responsive design that adapts to different screen sizes.',
-      skills: [],
+      description: 'This website is designed to showcase my skills and experience in computer science. With a clean and modern design, not just in the looks, but in the code as well, it provides a brief overview of my education and the projects I\'ve worked on. Featuring a responsive design with dynamic content, a modular single-page application consisting of multiple components utilizing many of Angular\'s features, a CDN is used to deliver the best sized image, and object-oriented UI code for easy modification. Check out the Readme!',
+      skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["JavaScript", "javascript"], ["Bootstrap", "bootstrap"], ["Angular", "angular&logoColor=red"]],
       imageUrl: '/assets/site.png',
       imageWidth: 1919,
       imageHeight: 1057,
-      githubUrl: 'https://github.com/djcurr/PortfolioSite',
-      liveUrl: 'https://derekcurrycompsci.com/',
+      githubUrl: 'https://github.com/djcurr/PortfolioSite'
     },
     {
       title: 'WisdomBots',
@@ -42,8 +42,8 @@ export class ProjectsComponent {
     },
     {
       title: 'Tesla Rebuild',
-      description: 'I began a large project to restore a heavily damaged Tesla, which has given me a deep understanding of electric vehicle components and systems. There was a great deal of problem solving involved with the mechanical and electrical systems due to having little information or proper tools. This created my interest in what controls all of the systems in the car.',
-      skills: [],
+      description: 'I began a large project to restore a heavily damaged Tesla, which has given me a deep understanding of electric vehicle components and systems. There was a great deal of problem solving involved with the mechanical and electrical systems due to having little information or proper tools. This created my interest in what controls all of the systems in the car. Check out the photo album!',
+      skills: [["Problem Solving", ""], ["Determination", ""], ["Innovation", ""]],
       imageWidth: 4080,
       imageHeight: 3072,
       imageUrl: '/assets/car1.jpg',
@@ -52,7 +52,7 @@ export class ProjectsComponent {
     {
       title: 'Tesla MCU Reverse Engineering',
       description: 'The Tesla MCU has become an incredibly secure piece of hardware, incorporating many layers of hardening. I would like to learn how the MCU controls the car by dumping and analyzing the firmware. I am beginning by looking at hardware vulnerabilities and how different components communicate.',
-      skills: [],
+      skills: [["Reverse Engineering", ""], ["Hardware Development", ""], ["Assembly", ""]],
       imageWidth: 1920,
       imageHeight: 1080,
       imageUrl: '/assets/mcu.jpg',
