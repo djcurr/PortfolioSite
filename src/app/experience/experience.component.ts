@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Experience} from "./experience.model";
+import {Component} from '@angular/core';
+import {Experience} from "./experience.model";
 
 @Component({
   selector: 'app-experience',
@@ -18,6 +18,21 @@ export class ExperienceComponent {
       imageLink: "./assets/HCL.jpg",
       companyWebsite: "https://www.hcltech.com/"
     },
+    {
+      company: "Codecademy",
+      title: "Content Contributor | Go & WebDevelopment",
+      date: "May 2024 - November 2024",
+      information: ["Experience designing interactive lessons and quizzes reinforcing learning and increasing learner retention rates",
+        "Specialize in distilling complex GoLang and web development concepts into digestible, engaging educational content for diverse professional audiences",
+        "Collaborate with Codecademy's Curriculum team to craft learning outcomes and build a compelling learner experience",
+        "Advocate for best practices in software engineering within educational materials, enhancing the real-world applicability of learning experiences",
+        "Skilled in creating B2B educational solutions that cater to the specific needs of businesses seeking to upskill their teams in modern technologies"
+      ],
+      location: "Remote",
+      skills: [["Go", "go"], ["RESTful API", ""], ["Pedagogy",""], ["Communication", ""], ["HTML", "html5"], ["CSS", "css3&logoColor=blue"]],
+      imageLink: "./assets/codecademy.jpg",
+      companyWebsite: "https://www.codecademy.com/"
+    }
   ];
 
   mapSkillToImage(skill: string[]) {
