@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { About } from "./about.model";
+import {Component} from '@angular/core';
+import {About} from "./about.model";
 
 
 @Component({
@@ -14,19 +14,19 @@ export class AboutComponent {
   skills: About[] = [
     {
       label: "Education",
-      items: [["North Carolina State University", ""], ["Computer Science", ""], ["May 2025", ""], ["Cumulative GPA: 3.93", ""], ["Major GPA: 4.0", ""], ["Dean's List", ""]]
+      items: [["North Carolina State University", ""], ["Computer Science (BS)", ""], ["Mathematics (BS)", ""], ["May 2025", ""], ["Cumulative GPA: 3.93", ""], ["Major GPA: 4.0", ""], ["Dean's List", ""]]
     },
     {
       label: "Languages",
-      items: [["JavaScript", "javascript"], ["Java", ""], ["Go", "go"], ["C", "c&logoColor=blue"], ["C++", "cplusplus&logoColor=blue"], ["HTML", "html5"], ["CSS", "css3&logoColor=blue"]],
+      items: [["JavaScript", "javascript"], ["Java", ""], ["Go", "go"], ["C", "c&logoColor=blue"], ["C++", "cplusplus&logoColor=blue"], ["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["SQL", "postgresql&logoColor=#4169E1"]],
     },
     {
       label: "Frameworks",
-      items: [["Kubernetes", "kubernetes"], ["OpenAPI", "openapiinitiative"], ["Prometheus", "prometheus"], ["Node.js", "nodedotjs"], ["Angular", "angular&logoColor=red"], ["Bootstrap", "bootstrap"], ["RESTful API", ""], ["JUnit", "junit5"], ["MongoDB", "mongodb"], ["Jenkins", "jenkins"]]
+      items: [["Kubernetes", "kubernetes"], ["OpenAPI", "openapiinitiative"], ["Prometheus", "prometheus"], ["Node.js", "nodedotjs"], ["Angular", "angular&logoColor=red"], ["Bootstrap", "bootstrap"], ["RESTful API", ""], ["JUnit", "junit5"], ["MongoDB", "mongodb"], ["Jenkins", "jenkins"], ["Helm", "helm&logoColor=blue"], ["OpenMP", ""]]
     },
     {
       label: "Developer Tools",
-      items: [["Git", "git"], ["Docker", "docker"], ["Google Cloud Platform", "google-cloud"], ["Visual Studio", "visual-studio&logoColor=blue"], ["Eclipse", "eclipse&logoColor=purple"], ["Jetbrains Tools", "jetbrains&logoColor=black"]]
+      items: [["Git", "git"], ["Docker", "docker"], ["Google Cloud Platform", "google-cloud"], ["Visual Studio", "visual-studio&logoColor=blue"], ["Eclipse", "eclipse&logoColor=purple"], ["Jetbrains Tools", "jetbrains&logoColor=black"], ["Doxygen", "doxygen&logoColor=blue"]]
     },
   ]
 

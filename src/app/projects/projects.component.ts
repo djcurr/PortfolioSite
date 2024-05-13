@@ -22,6 +22,15 @@ export class ProjectsComponent {
       liveUrl: 'https://djcurr.github.io/Pathfinding-Visualization/',
     },
     {
+      title: 'Heat Equation Visualization',
+      description: 'This was designed using advanced software engineering and mathematical techniques through an interactive C++ application that simulates heat transfer. Emphasizing efficient application design, this project leverages OpenMP for robust multithreading capabilities, ensuring high-performance computations. The architecture is designed around the Model-View-Controller (MVC) and Publish/Subscribe (Pub/Sub) patterns, optimizing maintainability and scalability while decoupling the UI from computational logic for fluid, real-time user interactions. The solution is obtained using partial differential equations, the finite element method (FEM), and advanced linear algebra techniques such as algebraic multigrid (AMG). Check out the Readme!',
+      imageUrl: '/assets/heatViz.png',
+      imageWidth: 2878,
+      imageHeight: 1674,
+      skills: [["C++", "cplusplus&logoColor=blue"], ["OpenMP", ""], ["OpenGL", "opengl&logoColor=5586A4"], ["Eigen", ""], ["Doxygen", "doxygen&logoColor=blue"], ["Differential Equations", ""]],
+      githubUrl: 'https://github.com/djcurr/heatEquationVisualization'
+    },
+    {
       title: 'Portfolio Website',
       description: 'This website is designed to showcase my skills and experience in computer science. With a clean and modern design, not just in the looks, but in the code as well, it provides a brief overview of my education and the projects I\'ve worked on. Featuring a responsive design with dynamic content, a modular single-page application consisting of multiple components utilizing many of Angular\'s features, a CDN is used to deliver the best sized image, and object-oriented UI code for easy modification. Check out the Readme!',
       skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["JavaScript", "javascript"], ["Bootstrap", "bootstrap"], ["Angular", "angular&logoColor=red"]],
@@ -30,16 +39,16 @@ export class ProjectsComponent {
       imageHeight: 1057,
       githubUrl: 'https://github.com/djcurr/PortfolioSite'
     },
-    {
-      title: 'WisdomBots',
-      description: 'A website allowing users to purchase cryptocurrency trading bots. The service also provided instructional videos, frequently asked questions, and an affiliate system. The website was implemented with Bootstrap and used my cryptocurrency transaction handler written in Go.',
-      imageUrl: '/assets/wisdombots.png',
-      imageHeight: 1082,
-      imageWidth: 1902,
-      skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["Bootstrap", "bootstrap"], ["Go", "go"], ["JavaScript", "javascript"], ["MongoDB", "mongodb"], ["RESTful API", ""]],
-      githubUrl: 'https://github.com/djcurr/WisdomBots',
-      liveUrl: 'https://djcurr.github.io/WisdomBots/',
-    },
+    // {
+    //   title: 'WisdomBots',
+    //   description: 'A website allowing users to purchase cryptocurrency trading bots. The service also provided instructional videos, frequently asked questions, and an affiliate system. The website was implemented with Bootstrap and used my cryptocurrency transaction handler written in Go.',
+    //   imageUrl: '/assets/wisdombots.png',
+    //   imageHeight: 1082,
+    //   imageWidth: 1902,
+    //   skills: [["HTML", "html5"], ["CSS", "css3&logoColor=blue"], ["Bootstrap", "bootstrap"], ["Go", "go"], ["JavaScript", "javascript"], ["MongoDB", "mongodb"], ["RESTful API", ""]],
+    //   githubUrl: 'https://github.com/djcurr/WisdomBots',
+    //   liveUrl: 'https://djcurr.github.io/WisdomBots/',
+    // },
     {
       title: 'Tesla Rebuild',
       description: 'I began a large project to restore a heavily damaged Tesla, which has given me a deep understanding of electric vehicle components and systems. There was a great deal of problem solving involved with the mechanical and electrical systems due to having little information or proper tools. This created my interest in what controls all of the systems in the car. Check out the photo album!',
