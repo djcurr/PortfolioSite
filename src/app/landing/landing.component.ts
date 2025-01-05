@@ -8,7 +8,7 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent {
-  landing = "I specialize in cloud development, leveraging platforms like GCP to deploy scalable and resilient applications. Check out my projects to see what I've been working on.";
+  landing = "Founder & Technical Architect specializing in cloud, AI, and financial systems. I build scalable, resilient applications using AWS, GCP, and cutting-edge technologies. Explore my projects to see my work in action.";
 
   constructor(private modalService: NgbModal) {}
 
