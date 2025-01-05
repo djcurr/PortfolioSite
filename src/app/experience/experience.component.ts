@@ -104,7 +104,8 @@ export class ExperienceComponent {
   ];
 
   mapSkillToImage(skill: string[]) {
-    return "https://img.shields.io/badge/" + skill[0] !== 'C\#' ? skill[0] : 'C%23' + "-dee0e3?logo=" + skill[1]
+    return "https://img.shields.io/badge/" + (skill[0] !== 'C#' ? skill[0] : 'C%23') + "-dee0e3?logo=" + skill[1];
   }
+
 }
 
