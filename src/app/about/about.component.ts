@@ -78,6 +78,7 @@ export class AboutComponent {
     if (skill[0] === "North Carolina State University") {
       color = "df0000"
     }
-    return "https://img.shields.io/badge/" + skill[0] + "-" + color + "?logo=" + skill[1]
+
+    return "https://img.shields.io/badge/" + (skill[0] !== 'C#' ? skill[0] : 'C%23') + "-" + color + "?logo=" + skill[1]
   }
 }
