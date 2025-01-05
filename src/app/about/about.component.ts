@@ -28,7 +28,7 @@ export class AboutComponent {
         ["Go", "go"],
         ["C", "c&logoColor=blue"],
         ["C++", "cplusplus&logoColor=blue"],
-        ["C#", ""],
+        ["C\#", ""],
         ["PHP", "php"],
         ["Python", "python"],
         ["HTML", "html5"],

@@ -22,7 +22,8 @@ export class ExperienceComponent {
       location: '',
       skills: [
         ['Java (Spring)', 'spring'],
-        ['C# (.NET)', 'dotnet'],
+        ['C\#', ''],
+        ['.NET', 'dotnet'],
         ['Angular', 'angular'],
         ['Docker', 'docker'],
         ['AWS', 'amazonwebservices'],
@@ -33,7 +34,7 @@ export class ExperienceComponent {
         ['DNS', ''],
         ['System Design', '']
       ],
-      imageLink: './assets/stocktradersdaily-canada.png',
+      imageLink: './assets/stocktradersdaily_canada.png',
       companyWebsite: 'https://canada.stocktradersdaily.com/'
     },
     {
